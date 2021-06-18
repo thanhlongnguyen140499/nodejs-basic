@@ -9,6 +9,10 @@
         </tr>
     </thead>
     <tbody>
+        <form method="GET" action="/users/search">
+            <input type="text" name="name">
+            <button>Search</button>
+        </form>
         {{#each users}}
             <tr>
                 <th scope="row">{{sum @index 1}}</th>
