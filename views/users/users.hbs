@@ -1,0 +1,22 @@
+<h1>User List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">User's Name</th>
+        {{!-- <th scope="col" colspan="2">Created At</th> --}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.name}}</td>
+                {{!-- <td>{{this.createdAt}}</td> --}}
+                <td><a href="" class="btn btn-link">Edit</a></td>
+                <td><a href="" class="btn btn-link">Delete</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
